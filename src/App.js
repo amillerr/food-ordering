@@ -1,13 +1,13 @@
 import React                     from "react";
-import Navigate                  from "./components/Navigation/Navigation";
 import {BrowserRouter as Router} from "react-router-dom";
-import {GlobalStyle}             from "./components/globalStyles";
+import {GlobalStyle}             from "./globalStyles";
+import Main                      from "./components/Main/Main";
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
-      <Navigate />
+      <Main />
     </Router>
   );
 }
