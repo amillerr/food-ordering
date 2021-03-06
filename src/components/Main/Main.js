@@ -1,14 +1,34 @@
-import React from "react";
+import React, {useState}  from "react";
 import Navigation from "../Navigation/Navigation";
-import { MainContainer, MainContent, MainItems, MainTitle, MainText, MainButton } from './MainStyle'
+import {
+  MainContainer,
+  MainContent,
+  MainItems,
+  MainTitle,
+  MainText,
+  MainButton
+} from './MainStyle'
 import Sidebar from "../Sidebar/Sidebar";
 
 
+
 const Main = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <MainContainer>
-      <Navigation />
-       <Sidebar />
+      <Navigation
+        toggle={toggle}
+      />
+       <Sidebar
+         isOpen={isOpen}
+         toggle={toggle}
+       />
          <MainContent>
            <MainItems>
              <MainTitle>Greatest Pizza Ever</MainTitle>
