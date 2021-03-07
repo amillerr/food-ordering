@@ -1,5 +1,5 @@
-import React, {useState}  from "react";
-import Navigation from "../Navigation/Navigation";
+import React, {useState} from "react";
+import Navigation        from "../Navigation/Navigation";
 import {
   MainContainer,
   MainContent,
@@ -7,27 +7,34 @@ import {
   MainTitle,
   MainText,
   MainButton
-} from './MainStyle'
-import Sidebar from "../Sidebar/Sidebar";
-
-
+}                        from './MainStyle'
+import Sidebar           from "../Sidebar/Sidebar";
+import Cart              from "../Cart/Cart";
 
 const Main = () => {
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [isOpenCart, setIsOpenCart] = useState(false);
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen);
+  const toggleMenu = () => {
+    setIsOpenMenu(!isOpenMenu);
+  }
+  const toggleCart = () => {
+    setIsOpenCart(!isOpenCart);
   }
 
   return (
     <MainContainer>
       <Navigation
-        toggle={toggle}
+        toggleMenu={toggleMenu}
+        toggleCart={toggleCart}
       />
        <Sidebar
-         isOpen={isOpen}
-         toggle={toggle}
+         isOpen={isOpenMenu}
+         toggleMenu={toggleMenu}
+       />
+       <Cart
+         isOpen={isOpenCart}
+         toggleCart={toggleCart}
        />
          <MainContent>
            <MainItems>

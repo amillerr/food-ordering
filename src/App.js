@@ -15,9 +15,11 @@ function App() {
       <Products
         title='Choose your favorite'
         data={PizzaList}
+        id='pizzas'
       />
       <Feature />
       <Products
+        id='desserts'
         title='Sweet Treats for You'
         data={DessertsList}
       />

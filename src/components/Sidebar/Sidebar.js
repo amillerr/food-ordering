@@ -9,13 +9,13 @@ import {
   SidebarWrapButton
 } from './SidebarStyle';
 
-const Sidebar = ({ isOpen, toggle }) => {
+const Sidebar = ({ isOpen, toggleMenu }) => {
   return (
     <SidebarContainer
       isOpen={isOpen}
-      onClick={toggle}
+      onClose={toggleMenu}
     >
-      <Icon onClick={toggle}>
+      <Icon onClick={toggleMenu}>
         <CloseIcon />
       </Icon>
       <SidebarMenu>
