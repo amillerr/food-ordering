@@ -12,7 +12,7 @@ export const PizzaList = [
     name: 'Margarita Pizza',
     desc:
       ' Pizza Sauce, Fresh & Shredded Mozzarella, Tomato & Fresh Basil',
-    price: '$10.99',
+    price: '10.99',
     button: 'Add to Cart'
   },
   {
@@ -21,7 +21,7 @@ export const PizzaList = [
     name: 'Buffalo Chicken Pizza',
     desc:
       ' Chopped Boneless Buffalo Wings, Shredded Mozzarella Cheese & Blue Cheese Dressing',
-    price: '$16.99',
+    price: '16.99',
     button: 'Add to Cart'
   },
   {
@@ -30,7 +30,7 @@ export const PizzaList = [
     name: 'Pepperoni Pizza',
     desc:
       ' Pizza Sauce, Shredded Mozzarella & Pepperoni',
-    price: '$14.99',
+    price: '14.99',
     button: 'Add to Cart'
   }
 ];
@@ -42,7 +42,7 @@ export const DessertsList = [
     name: 'Lava Cake',
     desc:
       ' Warm molten Chocolate Cake with Vanilla Ice Cream & Chocolate Sauce',
-    price: '$9.99',
+    price: '9.99',
     button: 'Add to Cart'
   },
   {
@@ -51,7 +51,7 @@ export const DessertsList = [
     name: 'Vanilla Cheesecake',
     desc:
       ' Vanilla Cheesecake with Berry Glaze and Strawberries',
-    price: '$6.99',
+    price: '6.99',
     button: 'Add to Cart'
   },
   {
@@ -60,7 +60,7 @@ export const DessertsList = [
     name: 'Coconut Cream Pie',
     desc:
       ' Homemade Coconut Pudding with Sweetened Coconut Flakes',
-    price: '$5.99',
+    price: '5.99',
     button: 'Add to Cart'
   }
 ];

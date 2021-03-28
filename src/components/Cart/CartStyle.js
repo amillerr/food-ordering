@@ -34,7 +34,7 @@ export const Icon = styled.div`
   outline: none;
 `;
 
-export const CartMenu = styled.div`
+export const CartList = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 80px);
@@ -45,21 +45,16 @@ export const CartMenu = styled.div`
   }
 `;
 
-export const CartLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  text-decoration: none;
-  list-style: none;
-  transition: 0.2s ease-in-out;
-  color: #000;
-  cursor: pointer;
-  
-  &:hover {
-    color: #e31837;
-    transition: 0.2s ease-in-out;
-  }
+export const CartItem = styled.div`
+
+`;
+
+export const CartItemTitle = styled.h3`
+
+`;
+
+export const CartItemPrice = styled.p`
+
 `;
 
 export const CartWrapButton = styled.div`

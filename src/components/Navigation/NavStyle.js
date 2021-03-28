@@ -73,4 +73,9 @@ export const CartIcon = styled(HiShoppingCart)`
   top: 100px;
   right: 22px;
   cursor: pointer;
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.8em;
+    transform: translate(-25%,-100%);
+  }
 `;

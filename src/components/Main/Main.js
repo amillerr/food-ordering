@@ -10,6 +10,7 @@ import {
 }                        from './MainStyle'
 import Sidebar           from "../Sidebar/Sidebar";
 import Cart              from "../Cart/Cart";
+import { PizzaList } from "../../utils/data";
 
 const Main = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -33,6 +34,7 @@ const Main = () => {
          toggleMenu={toggleMenu}
        />
        <Cart
+         data={PizzaList}
          isOpen={isOpenCart}
          toggleCart={toggleCart}
        />

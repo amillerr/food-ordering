@@ -3,14 +3,16 @@ import {
   CartContainer,
   Icon,
   CloseIcon,
-  CartMenu,
-  CartLink,
+  CartList,
+  CartItem,
+  CartItemTitle,
+  CartItemPrice,
   CartRoute,
   CartWrapButton
 } from './CartStyle';
 
 
-const Cart = ({isOpen, toggleCart}) => {
+const Cart = ({isOpen, toggleCart, data}) => {
   return (
     <CartContainer
       isOpen={isOpen}
@@ -19,16 +21,22 @@ const Cart = ({isOpen, toggleCart}) => {
       <Icon onClick={toggleCart}>
         <CloseIcon />
       </Icon>
-      <CartMenu>
-        <CartLink to='/'>first</CartLink>
-        <CartLink to='/'>second</CartLink>
-        <CartLink to='/'>third</CartLink>
-      </CartMenu>
+      <CartList>
+          {data.map((product, index) => {
+            return (
+              <CartItem key={index}>
+                <CartItemTitle>{product.name}</CartItemTitle>
+                <CartItemPrice>{product.price}</CartItemPrice>
+              </CartItem>
+            )
+          })}
+
+      </CartList>
       <CartWrapButton>
         <CartRoute to='/'>Order Now</CartRoute>
       </CartWrapButton>
     </CartContainer>
-  );
-};
+  )
+}
 
 export default Cart;

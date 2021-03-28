@@ -1,5 +1,7 @@
 # Uncle`s Po Pizza 
-#
+
+Ссылка на проект - https://amillerr.github.io/food-ordering/
+
 # Описание проекта
 
 Uncle`s Po Pizza это сайт по заказу еды. В этом проекте я познакомился с новыми для себя инструментами.
